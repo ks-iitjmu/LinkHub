@@ -1,36 +1,110 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# LinkHub
+
+LinkHub is a personal links page built with Next.js, React, TypeScript, and Tailwind CSS.
+It presents a profile header, role/location details, and external links in a clean, mobile-friendly layout.
+
+## Features
+
+- Personal profile hero section with image, name, role, and location
+- Reusable link row component for external destinations
+- Sticky app shell structure with header and footer
+- Responsive typography and spacing for desktop and mobile
+- Built on the Next.js App Router
+
+## Tech Stack
+
+- Next.js 16
+- React 19
+- TypeScript
+- Tailwind CSS v4
+- ESLint
 
 ## Getting Started
 
-First, run the development server:
+### 1) Install dependencies
+
+```bash
+npm install
+```
+
+### 2) Run the development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000 in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Available Scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `npm run dev` - Start the development server
+- `npm run build` - Build the app for production
+- `npm run start` - Run the production build
+- `npm run lint` - Run ESLint
 
-## Learn More
+## Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+```text
+src/
+	app/
+		globals.css        # Global styles and Tailwind import
+		layout.tsx         # Root layout, metadata, header/footer wrapper
+		page.tsx           # Main links page content
+	components/
+		header.tsx         # Top navigation/header strip
+		footer.tsx         # Footer section
+		link.tsx           # Reusable external link row component
+public/
+	formalPicture.png
+	location.svg
+	portfolio.svg
+	arrow.svg
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Customization
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Update profile details
 
-## Deploy on Vercel
+Edit `src/app/page.tsx`:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Name text
+- Role/description text
+- Location text
+- Last updated date
+- Profile image import and alt text
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Update header info link
+
+Edit `src/components/header.tsx`:
+
+- Brand title text
+- Info link URL
+
+### Add or change social links
+
+Edit the `Links` component usages in `src/app/page.tsx`.
+Each link takes:
+
+- `name` - Label shown in the row
+- `icon` - Icon image import from `public/`
+- `href` - External URL
+
+Example:
+
+```tsx
+<Links name="GitHub" icon={githubSVG} href="https://github.com/your-username" />
+```
+
+## Deployment
+
+This project can be deployed on Vercel with zero configuration:
+
+1. Push your repository to GitHub.
+2. Import the project into Vercel.
+3. Deploy.
+
+You can also deploy anywhere that supports Node.js and Next.js production builds.
+
+## License
+
+This project is available for personal use and customization.

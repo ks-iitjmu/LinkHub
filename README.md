@@ -60,51 +60,6 @@ public/
 	portfolio.svg
 	arrow.svg
 ```
+<br>
+Made with love by Kunal Sharma
 
-## Customization
-
-### Update profile details
-
-Edit `src/app/page.tsx`:
-
-- Name text
-- Role/description text
-- Location text
-- Last updated date
-- Profile image import and alt text
-
-### Update header info link
-
-Edit `src/components/header.tsx`:
-
-- Brand title text
-- Info link URL
-
-### Add or change social links
-
-Edit the `Links` component usages in `src/app/page.tsx`.
-Each link takes:
-
-- `name` - Label shown in the row
-- `icon` - Icon image import from `public/`
-- `href` - External URL
-
-Example:
-
-```tsx
-<Links name="GitHub" icon={githubSVG} href="https://github.com/your-username" />
-```
-
-## Deployment
-
-This project can be deployed on Vercel with zero configuration:
-
-1. Push your repository to GitHub.
-2. Import the project into Vercel.
-3. Deploy.
-
-You can also deploy anywhere that supports Node.js and Next.js production builds.
-
-## License
-
-This project is available for personal use and customization.

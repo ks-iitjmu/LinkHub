@@ -60,6 +60,3 @@ public/
 	portfolio.svg
 	arrow.svg
 ```
-<br>
-Made with love by Kunal Sharma
-

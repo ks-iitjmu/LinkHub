@@ -19,17 +19,17 @@ export default function Links({ name, icon, href }: LinkProps) {
         <Image
           src={icon}
           alt={`${name} icon`}
-          width={18}
-          height={18}
+          width={24}
+          height={24}
           className="grayscale transition-transform duration-200 ease-in-out group-hover:scale-[1.1]"
         />
-        <span className="uppercase text-sm md:text-base font-bold">{name}</span>
+        <span className="uppercase text-sm md:text-lg font-bold">{name}</span>
       </div>
       <Image
         src={arrowSVG}
         alt="arrow"
-        width={18}
-        height={18}
+        width={24}
+        height={24}
         className="transition-transform duration-200 ease-in-out group-hover:scale-[1.1]"
       ></Image>
     </Link>

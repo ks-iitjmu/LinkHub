@@ -1,8 +1,18 @@
 import Image from "next/image";
+import Links from "@/components/link";
+
 import formalPhoto from "../../public/formalPicture.png";
 import locationSVG from "../../public/location.svg";
 import portfolioSVG from "../../public/portfolio.svg";
-import Links from "@/components/link";
+import linkedinSVG from "../../public/linkedin.svg";
+import xSVG from "../../public/x.svg";
+import githubSVG from "../../public/github.svg";
+import codolioSVG from "../../public/codolio.svg";
+import leetcodeSVG from "../../public/leetcode.svg";
+import codeforcesSVG from "../../public/codeforces.svg";
+import resumeSVG from "../../public/resume.svg";
+import gmailSVG from "../../public/gmail.svg";
+import whatsappSVG from "../../public/whatsapp.svg";
 
 export default function Home() {
   return (
@@ -40,9 +50,49 @@ export default function Home() {
             href="https://ksiitjmu.vercel.app/"
           />
           <Links
-            name="Portfolio"
-            icon={portfolioSVG}
-            href="https://ksiitjmu.vercel.app/"
+            name="Linkedin"
+            icon={linkedinSVG}
+            href="https://www.linkedin.com/in/ks-iitjmu/"
+          />
+          <Links
+            name="X"
+            icon={xSVG}
+            href="https://x.com/ksiitjmu"
+          />
+          <Links
+            name="Github"
+            icon={githubSVG}
+            href="https://github.com/ks-iitjmu"
+          />
+          <Links
+            name="Codolio"
+            icon={codolioSVG}
+            href="https://codolio.com/profile/ksiitjmu"
+          />
+          <Links
+            name="Leetcode"
+            icon={leetcodeSVG}
+            href="https://leetcode.com/u/kunalsharma02/"
+          />
+          <Links
+            name="Codeforces"
+            icon={codeforcesSVG}
+            href="https://codeforces.com/profile/ks-iitjmu"
+          />
+          <Links
+            name="Resume"
+            icon={resumeSVG}
+            href="https://drive.google.com/file/d/1NFNRh2SLGEXkF8-x-V_738SNDj8IA6FB/view?usp=sharing"
+          />
+          <Links
+            name="Gmail"
+            icon={gmailSVG}
+            href="mailto:2023uma0221@iitjammu.ac.in"
+          />
+          <Links
+            name="Whatsapp"
+            icon={whatsappSVG}
+            href="https://wa.me/919541712485"
           />
         </div>
         <div className="flex items-center justify-between pb-12 md:pb-20">
